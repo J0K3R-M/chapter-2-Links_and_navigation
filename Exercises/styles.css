@@ -1,22 +1,39 @@
-/* General Styles */
+/* General Page Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-/* Navbar Styling */
+h1 {
+    font-size: 2em;
+    color: #444;
+}
+
+p, ul {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #3c91e6;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background: #444;
-    padding: 10px 0;
+    padding: 0;
     margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li {
@@ -24,46 +41,74 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #555;
-    border-radius: 5px;
+    background-color: #2a6fb1;
 }
 
-/* Footer Button Styling */
-.button {
-    display: inline-block;
-    background: #444;
-    color: #fff;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
+/* Section Styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+section {
+    margin-bottom: 20px;
+}
+
+section h1 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3c91e6;
+    padding-bottom: 5px;
+    color: #3c91e6;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3c91e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
 .button:hover {
-    background: #555;
+    background-color: #2a6fb1;
 }
 
-/* Additional Background Styles */
-header {
-    background: url('header-background.jpg') no-repeat center center/cover;
-    height: 300px;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
+/* Footer Styling */
 footer {
-    background: #444;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px;
+    background-color: #3c91e6;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Additional Custom Classes */
+.highlight {
+    background-color: #fff5d1;
+    padding: 10px;
+    border-left: 5px solid #ffd700;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.subtle-text {
+    color: #777;
+    font-style: italic;
 }
